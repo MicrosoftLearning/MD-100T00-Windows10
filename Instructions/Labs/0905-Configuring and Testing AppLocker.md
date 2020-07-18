@@ -18,7 +18,7 @@ You decide to use AppLocker.
     **Pa55w.rd**.
 
 2.  In the **Type here to search** box on the taskbar, type **gpedit.msc**, and
-    then press Enter.
+    then press **Enter**.
 
 3.  In the Local Group Policy Editor, expand **Computer Configuration**, expand
     **Windows Settings**, expand **Security Settings**, expand **Application
@@ -51,7 +51,7 @@ You decide to use AppLocker.
 13. In the details pane, right-click the empty space and then select **Create
     Default Rules**.
 
->    
+
 
 ### Task 2: Enforce AppLocker rules
 
@@ -66,9 +66,11 @@ You decide to use AppLocker.
 4.  Right-click **Start**, and then select **Windows PowerShell**.
 
 5.  At the Windows PowerShell prompt, type the following command, and then press
-    Enter:
+    **Enter**:
 
->   gpupdate /force
+    ```
+    gpupdate /force
+    ```
 
 
 ### Task 3: Confirm executable rule enforcement
@@ -89,7 +91,7 @@ You decide to use AppLocker.
 6.  Review the entries in the results pane. Locate **Event ID 8001.**  
     **Note**: This will show that the AppLocker Policy is active now.
 
-7.  Sign out.
+7.  Sign out of **LON-CL1**.
 
    
 
@@ -100,7 +102,7 @@ You decide to use AppLocker.
 2.  In the **Type here to search** box on the taskbar, type **Media Player**,
     and then select **Windows Media Player**.
 
-    _Note: You will be unable to start Windows Media Player._
+    _**Note**: You will be unable to start Windows Media Player._
 
 1.  In the **This app has been blocked by your system administrator** dialog
     box, select **Close**.
@@ -116,7 +118,7 @@ You decide to use AppLocker.
 
 5.  Close Event Viewer.
 
-6.  Sign out.
+6.  Sign out of **LON-CL1**.
 
 
 **Results**: After completing this exercise, you should have configured an

@@ -23,19 +23,19 @@ newly created storage space.
 
 3.  At the PowerShell Window type the following command and confirm with "Yes":
 
->   Clear-Disk -Number 1 -RemoveData
+```
+Clear-Disk -Number 1 -RemoveData
+```
 
-1.  At the PowerShell Window type the following command and confirm with "Yes":
+4.  At the PowerShell Window type the following command and confirm with "Yes":
 
->   Get-Disk \| Where partitionstyle -eq 'raw' \| Initialize-Disk
->   -PartitionStyle MBR
-
- 
+```
+Get-Disk \| Where partitionstyle -eq 'raw' \| Initialize-Disk -PartitionStyle MBR
+```
 
 ### Task 2: Create a mirrored storage pool
 
-1.  Select **Start**, and then type **Storage**. Select **Manage Storage
-    Spaces** in the list.
+1.  Select **Start**, and then type **Storage**. Select **Manage Storage Spaces** in the list.
 
 2.  Select **Create a new pool and storage space**.
 
@@ -46,7 +46,7 @@ newly created storage space.
 
 5.  Notice that a resilience type of Two-way mirror is selected.
 
-6.  Click **Create storage space.** This will automatically open the File
+6.  Click **Create storage space**. This will automatically open the File
     Explorer window.
 
  

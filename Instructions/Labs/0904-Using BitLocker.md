@@ -34,13 +34,13 @@ on the local drive (E:).
 
 6.  Close all open windows.
 
->    
+
 
 ### Task 2: Enable BitLocker
 
 1.  Select the **File Explorer** icon on the taskbar.
 
-2.  In File Explorer, in the navigation pane, expand **This PC.**
+2.  In File Explorer, in the navigation pane, expand **This PC**.
 
 3.  In the navigation pane, right-click Allfiles (E:), and then select **Turn on
     BitLocker**.
@@ -81,7 +81,7 @@ on the local drive (E:).
 
 15. Restart LON-CL1.
 
->    
+
 
 ### Task 3: Verify BitLocker
 
@@ -100,7 +100,6 @@ on the local drive (E:).
 
 5.  Close all open windows.
 
->    
 
 **Results**: After completing this exercise, you should have configured
 BitLocker to encrypt a local drive.

@@ -52,7 +52,7 @@ LON-DC1. The solution needs to be tested.
 
 ### Task 2: Configure and test File History
 
-1.  Switch to **LON-CL3**
+1.  Switch to **LON-CL3**.
 
 2.  Sign-in to **LON-CL3** as **Adatum\\Administrator**, with the password
     **Pa55w.rd**.

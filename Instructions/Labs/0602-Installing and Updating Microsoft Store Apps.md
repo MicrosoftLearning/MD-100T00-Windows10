@@ -5,6 +5,9 @@
 
 In this lab you will learn how install and update Microsoft Store Apps.
 
+_Dependency Note: Task 1 in Exercise 1 of the_ Synchronizing settings between devices _lab must be completed (or an
+available Microsoft ID) to perform this lab._
+
 
 ### Scenario
 
@@ -26,19 +29,18 @@ the Microsoft App Store using the Microsoft To-Do app.
 4.  In the **Administrator: Windows PowerShell** window, type **the following
     command** and then press **Enter**.
 
->   Set-Service wuauserv -Startuptype Manual
+```
+Set-Service wuauserv -Startuptype Manual
+```
 
->   *Note: For the lab setup, the Windows Update service is disabled. The above
->   command is not necessary to run in typical Windows 10 scenarios.*
+    *Note: For the lab setup, the Windows Update service is disabled. The above command is not necessary to run in typical Windows 10 scenarios.*
 
-1.  Sign out
+5.  Sign out
 
->    
 
 ### Task 2: Configure app updates
 
-1.  Sign in to LON-CL1 as Your first name + Last name’s first
-    letterMD100\@outlook.com with your PIN or the password **Pa55w.rd123**.
+1.  Sign in to LON-CL1 as **_Your first name_** + **_Your last name’s first letter_** + **MD100\@outlook.com** with the password **Pa55w.rd123**.
 
 2.  In the taskbar, select the **Microsoft Store** icon.
 
@@ -50,7 +52,6 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 5.  Select **Back**.
 
-###  
 
 ### Task 3: Install an app
 
@@ -59,15 +60,12 @@ the Microsoft App Store using the Microsoft To-Do app.
 
 2.  Select **Install**.  
 
->   *Note: If prompted by the Your account is missing some key info dialog box,
->   complete the information regarding Birthdate and Country/Region and select
->   Next.*
+    *Note: If prompted by the Your account is missing some key info dialog box, complete the information regarding Birthdate and Country/Region and select Next.*
 
-1.  If a **Try again later** dialog box appears, select **Close**.
+3.  If a **Try again later** dialog box appears, select **Close**.
 
-2.  Wait for the installation to finish.
+4.  Wait for the installation to finish.
 
->    
 
 ### Task 4: Update and remove apps
 

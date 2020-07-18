@@ -15,9 +15,9 @@ the issue.
 ### Task 1: Configure a picture password as a sign-in option
 
 1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password of
-    **Pa55w.rd.**
+    **Pa55w.rd**.
 
-2.  In L**ON-CL1**, select the **Start** icon, and then select **Settings**.
+2.  Select the **Start** icon, and then select **Settings**.
 
 3.  In the **Settings** dialog box, select **Accounts**, select **Sign-in
     options**, and then in the **Picture password** section, select **Add**. In
@@ -50,11 +50,9 @@ the issue.
 
 13. Close all windows.
 
-
->   *Note: Due to the restrictions of the lab environment VMs, this process is
->   in-place to ensure you are able to continue the lab.*
-
->    
+    _**Note**: Due to the restrictions of the lab environment VMs, this process is
+    in-place to ensure you are able to continue the lab._
+    
 
 ### Task 2: Update a driver in Device Manager
 
@@ -71,7 +69,7 @@ the issue.
 4.  In the **Update Drivers – Standard PS/2 Keyboard** dialog box, select
     **Browse my computer for driver software**.
 
-5.  On the **Browse for drivers on your compute**r page, select **Let me pick
+5.  On the **Browse for drivers on your computer** page, select **Let me pick
     from a list of available drivers on my computer**.
 
 6.  On the **Select the device driver you want to install for this hardware**
@@ -91,9 +89,9 @@ the issue.
     gestures that you defined for the picture password in Task 1.
 
 2.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press Enter.    
+    then press **Enter**.    
 
->   *Note: If the keyboard is not working, you should skip steps 2, 3, and 7.*
+    _**Note**: If the keyboard is not working, you should skip steps 2, 3, and 7._
 
 1.  In Notepad, type your name to confirm that the keyboard is still working.
 
@@ -110,9 +108,9 @@ the issue.
 
 6.  In the **Microsoft USB Internet Keyboard Properties** dialog box, select the
     **Driver** tab. Confirm that Roll Back Driver is available, and select
-    **Cancel.**
+    **Cancel**.
 
-7.  **Close Device Manager.**
+7.  Close Device Manager.
 
 8.  Right-click the **Start** icon, and then select **Computer Management**.
 
@@ -127,7 +125,7 @@ the issue.
 11. In the Settings app, select **Update & Security**, and then select the
     **Recovery** tab.
 
-12. Under Advanced Startup select **Restart now.**
+12. Under Advanced Startup select **Restart now**.
 
 13. On the Choose an option page select **Troubleshoot**.
 
@@ -141,8 +139,8 @@ the issue.
 17. When the computer starts, sign in as **Adatum\\Administrator** and use
     **Pa55w.rd** as the password.
 
->   *Note: As the keyboard is not working you need to use the onboard keyboard
->   to enter the password*
+    _**Note**: As the keyboard is not working you need to use the onboard keyboard
+    to enter the password._
 
 1.  Verify that the words Safe Mode appear in all four corners of the desktop.
     Right-click the **Start** icon, and then select **Device Manager**.
@@ -155,7 +153,7 @@ the issue.
     driver rollback can go back by only one version, and then select **Close**.
 
 4.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press **Enter. **
+    then press **Enter**.
 
 5.  In Notepad, type your name to confirm that the keyboard is working again,
     and then close Notepad without saving changes.
@@ -181,33 +179,32 @@ the issue.
 
 11. Close Computer Management
 
-12. Restart LON-CL1.
+12. Restart **LON-CL1**.
 
  
 
 ### Task 4: Verify if keyboard is working
 
 1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password of
-    **Pa55w.rd.**
+    **Pa55w.rd**.
 
 2.  On the taskbar, in the **Type here to search** box, type **notepad**, and
-    then press Enter.    
+    then press **Enter**.    
 
 3.  In Notepad, type your name to confirm that the keyboard is again working.
 
-4.  Close Notepad without saving changes
+4.  Close Notepad without saving changes.
 
 5.  Right-click the **Start** icon, and then select **Device Manager**.
 
 6.  Right-click **Standard PS/2 Keyboard**, select **Properties**, and then read
     the device status.
 
-7.  Select **OK**
+7.  Select **OK**.
 
-8.  Close all open windows
+8.  Close all open windows.
 
  
-
 **Results**: After completing this exercise, you should have successfully rolled
 back a driver and browsed safe mode.
 

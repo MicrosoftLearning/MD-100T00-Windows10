@@ -27,72 +27,72 @@ running and synchronization conflicts are handled.
 
 3.  In Windows PowerShell, type the following cmdlet, and then press **Enter**:
 
->   Install-WindowsFeature FS-SyncShareService
+    ```
+    Install-WindowsFeature FS-SyncShareService
+    ```
 
->   *Note: After the feature installs, you might see a warning display, because
->   Windows automatic updating is not enabled. For the purposes of this lab,
->   ignore the warning.*
+    _**Note**: After the feature installs, you might see a warning display, because Windows automatic updating is not enabled. For the purposes of this lab, ignore the warning._
 
-1.  Close the **Windows PowerShell** window.
+4.  Close the **Windows PowerShell** window.
 
-2.  In Server Manager, in the navigation pane, select **File and Storage
+5.  In Server Manager, in the navigation pane, select **File and Storage
     Services**, and then select **Work Folders**.
 
-3.  In the **WORK FOLDERS** section, select **TASKS**, and then select **New
+6.  In the **WORK FOLDERS** section, select **TASKS**, and then select **New
     Sync Share**.
 
-4.  In the **New Sync Share Wizard**, on the **Before you begin** page, select
+7.  In the **New Sync Share Wizard**, on the **Before you begin** page, select
     **Next**.
 
-5.  On the **Select the server and path** page, in the **Enter a local path**
+8.  On the **Select the server and path** page, in the **Enter a local path**
     text box, type **C:\\syncshare1**, select **Next**
 
-    **Important:** If **LON-DC1** is not listed in the **Servers** section, select
+    _**Important:** If **LON-DC1** is not listed in the **Servers** section, select
     **Cancel**. In Server Manager, select **Refresh**, and then repeat this task,
     beginning with step 5 and completing the remaining steps. This may take a
-    few minutes for LON-DC1 to show.
+    few minutes for LON-DC1 to show._
 
-1.  In the New Sync Share Wizard dialog select **OK**.
+9.  In the New Sync Share Wizard dialog select **OK**.
 
-2.  On the **Specify the structure for user folders** page, verify that **User
+10.  On the **Specify the structure for user folders** page, verify that **User
     alias** is selected, and then select **Next**.
 
-3.  On the **Enter the sync share name** page, select **Next** to accept the
+11.  On the **Enter the sync share name** page, select **Next** to accept the
     default sync share name.
 
-4.  On the **Grant sync access to groups** page, select **Add**, and in the
+12.  On the **Grant sync access to groups** page, select **Add**, and in the
     **Enter the object name to select** text box, type **Marketing**. select
     **OK**, and then select **Next**.
 
-5.  On the **Specify security policies for PCs** page, verify the two available
+13.  On the **Specify security policies for PCs** page, verify the two available
     options. Clear the **Automatically lock screen, and require a password**
     check box, and then select **Next**.
 
-6.  On the **Confirm selections** page, select **Create**.
+14.  On the **Confirm selections** page, select **Create**.
 
-7.  On the **View Results** page, select **Close**.
+15.  On the **View Results** page, select **Close**.
 
-8.  In Server Manager, in the **WORK FOLDERS** section, verify that
+16.  In Server Manager, in the **WORK FOLDERS** section, verify that
     **syncshare1** is listed, and that in the **USERS** section, the user
     **Anthony Lynch** is listed.
 
-9.  On **LON-DC1**, in Server Manager, select **Tools**, and then select
+17.  On **LON-DC1**, in Server Manager, select **Tools**, and then select
     **Internet Information Services (IIS) Manager**.
 
-10. In the Microsoft Internet Information Services (IIS) Manager, in the
+18. In the Microsoft Internet Information Services (IIS) Manager, in the
     navigation pane, expand  **LON-DC1 (ADATUM\\Administrator)**. If a popup
     window appears, select **No**. Expand **Sites**, right-click **Default Web
     Site**, and then select **Edit Bindings**.
 
-11. In the **Site Bindings** dialog box, select **Add**.
+19. In the **Site Bindings** dialog box, select **Add**.
 
-12. In the **Add Site Binding** dialog box, in the **Type** box, select
+20. In the **Add Site Binding** dialog box, in the **Type** box, select
     **https**. In the **SSL certificate** box, select **LON-DC1.Adatum.com**,
     select **OK**, and then select **Close**.
 
-13. Close the IIS Manager.
+21. Close the IIS Manager.
 
->    
+   
 
 ### Task 2: Create a GPO to deploy the Work Folders 
 
@@ -122,7 +122,6 @@ running and synchronization conflicts are handled.
 
 8.  Close the Group Policy Management Editor.
 
->    
 
 ### Task 3: Test the work folders
 
@@ -143,94 +142,94 @@ running and synchronization conflicts are handled.
 7.  On the Manage Work Folders page, check the option **Sync files over metered
     connections**.
 
->   **Note**: This is only needed due to the hosted lab environment
->   configuration.
+    _**Note**: This is only needed due to the hosted lab environment
+    configuration._
 
-1.  Close the Manage Work Folders window.
+8.  Close the Manage Work Folders window.
 
-2.  Switch to **LON-CL3**.
+9.  Switch to **LON-CL3**.
 
-3.  Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
+10.  Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
 
-4.  On **LON-CL3** select **Start**, type
+11.  On **LON-CL3** select **Start**, type
     [\\\\lon-dc1\\certenroll](file:///\\lon-dc1\certenroll), and then press
-    enter.
+    **Enter**.
 
-5.  In the **Enter Network credentials** dialog box, enter the user name as
+12.  In the **Enter Network credentials** dialog box, enter the user name as
     **administrator\@adatum.com** and the password as **Pa55w.rd**. Select
     **OK**.
 
-6.  In the **certenroll** window, double-click
+13.  In the **certenroll** window, double-click
     **LON-DC1.Adatum.com_AdatumCA.crt.**
 
-7.  On the **Certificate dialog** box, select **Install Certificate**.
+14.  On the **Certificate dialog** box, select **Install Certificate**.
 
-8.  On the **Certificate Import Wizard**, select **Local Machine** and select
+15.  On the **Certificate Import Wizard**, select **Local Machine** and select
     **Next**.
 
-9.  On the **User Account Control** dialog box, select **Yes**.
+16.  On the **User Account Control** dialog box, select **Yes**.
 
-10. On the **Certificate Store** page, select **Place all certificates in the
+17. On the **Certificate Store** page, select **Place all certificates in the
     following store**, and then select **Browse**.
 
-11. On the **Select Certificate Store** page, select **Trusted Root
+18. On the **Select Certificate Store** page, select **Trusted Root
     Certification Authorities** and select **OK**.
 
-12. On the **Certificate Store** page, select **Next**.
+19. On the **Certificate Store** page, select **Next**.
 
-13. On the **Certificate Import Wizard** page, select **Finish**.
+20. On the **Certificate Import Wizard** page, select **Finish**.
 
-14. In the **Certificate Import Wizard** dialog select **OK**, and then in the
+21. In the **Certificate Import Wizard** dialog select **OK**, and then in the
     **Certificate** window, select **OK**.
 
-15. Restart **LON-CL3**.
+22. Restart **LON-CL3**.
 
-16. Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
+23. Sign in to **LON-CL3** as **LON-CL3\\Admin** with the password **Pa55w.rd**.
 
-17. On **LON-CL3**, select **Start**, type **Control Panel**, and then press
+24. On **LON-CL3**, select **Start**, type **Control Panel**, and then press
     Enter.
 
-18. In Control Panel, select **System and Security,** and then select **Work
+25. In Control Panel, select **System and Security,** and then select **Work
     Folders**.
 
-19. On the **Manage Work Folders** page, select **Set up Work Folders**.
+26. On the **Manage Work Folders** page, select **Set up Work Folders**.
 
-20. On the **Enter your work email address** page, select **Enter a Work Folders
+27. On the **Enter your work email address** page, select **Enter a Work Folders
     URL instead**.
 
-21. On the **Enter a Work Folders URL** page, in the **Work Folders URL** text
+28. On the **Enter a Work Folders URL** page, in the **Work Folders URL** text
     box, type <https://lon-dc1.adatum.com>, and then select **Next**.
 
-22. In the **Windows Security** dialog box, in the **User name** text box, type
+29. In the **Windows Security** dialog box, in the **User name** text box, type
     **adatum\\anthony**, and in the **Password** text box, type **Pa55w.rd**,
     and then select **OK**.
 
-23. On the **Introducing Work Folders** page, review the local Work Folders
+30. On the **Introducing Work Folders** page, review the local Work Folders
     location, and then select **Next**.
 
-24. On the **Security policies** page, select the **I accept these policies on
+31. On the **Security policies** page, select the **I accept these policies on
     my PC** check box, and then select **Set up Work Folders**.
 
-25. On the **Work Folders has started syncing with this PC** page, select
+32. On the **Work Folders has started syncing with this PC** page, select
     **Close**.
 
-26. Switch to the Manage Work Folders window.
+33. Switch to the Manage Work Folders window.
 
-27. On the Manage Work Folders window, check the option **Sync files over
+34. On the Manage Work Folders window, check the option **Sync files over
     metered connections**.
 
->   **Note**: This is only needed due to the hosted lab environment
->   configuration.
+    _**Note**: This is only needed due to the hosted lab environment
+   configuration._
 
-1.  Switch to the Work Folders File Explorer window.
+35.  Switch to the Work Folders File Explorer window.
 
-2.  Verify that the **On LON-CL1.txt** file displays.
+36.  Verify that the **On LON-CL1.txt** file displays.
 
-3.  Right-click in the details pane, select **New**, select **Text Document**,
+37.  Right-click in the details pane, select **New**, select **Text Document**,
     and then in the **Name** text box, type **On LON-CL3**, and then press
     **Enter**.
 
->    
+ 
 
 ### Task 4: Test conflict handling
 
@@ -279,9 +278,8 @@ running and synchronization conflicts are handled.
     _Note: Because you modified the file at two locations, a conflict
     occurred, and one of the copies was renamed._
 
-1.  Sign out from LON-CL1 and LON-CL3.
+16.  Sign out from **LON-CL1** and **LON-CL3**.
 
->    
 
 **Results**: After finishing this lab you have installed and configured Work
 Folders.

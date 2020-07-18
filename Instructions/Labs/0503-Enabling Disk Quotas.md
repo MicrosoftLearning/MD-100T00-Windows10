@@ -20,7 +20,7 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 2.  Select the **File Explorer** icon on the taskbar.
 
-3.  In the File Explorer window, right-click **Allfiles (E:),** and then select
+3.  In the File Explorer window, right-click **Allfiles (E:)**, and then select
     **Properties**.
 
 4.  Select the **Quota tab**, and then select **Show Quota Settings**
@@ -29,12 +29,11 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
     management** check box and select the **Deny disk space to users exceeding
     quota limit** check box.
 
-6.  Select **Limit disk space to**, in the Limit disk space to text box, **type
-    500,** and then in the Set warning level to text box, **type 250**.
+6.  Select **Limit disk space to**, in the Limit disk space to text box, type **500**, and then in the Set warning level to text box, type **250**.
 
 7.  Select **MB** as the unit for both values.
 
-8.  In the Properties window, select **OK,** and then in the Disk Quota window,
+8.  In the Properties window, select **OK**, and then in the Disk Quota window,
     select **OK**.
 
 9.  Right-click **Start**, select **Shut down or sign out**, and then select
@@ -52,23 +51,26 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 3.  At the command prompt type the following five commands:
 
->   E:
+```
+E:
 
->   MKDIR research
+MKDIR research
 
->   CD research
+CD research
 
->   Fsutil file createnew file1.txt 209715200
+Fsutil file createnew file1.txt 209715200
 
->   Fsutil file createnew file2.txt 209715200
+Fsutil file createnew file2.txt 209715200
 
-1.  Sign out.
+```
 
-###  
+4.  Sign out.
+
+
 
 ### Task 3: Verify the disk quota functionality 
 
-1.  Sign in as **Adatum\\Administrator** with the password **Pa55w.rd**
+1.  Sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
 
 2.  Select the **File Explorer** icon on the taskbar.
 
@@ -77,7 +79,7 @@ their files. You decide to create disk quotas of 500 MB with a warning set at
 
 4.  Select the **Quota tab**, and then select **Show Quota Settings.**
 
-5.  In the Quota Settings for Allfiles (E:) window select **Quota Entries.**
+5.  In the Quota Settings for Allfiles (E:) window select **Quota Entries**.
 
 6.  Notice the warning for Ada Russell for the disk space used. You might need
     to expand some columns to read the full name and Logon Name.

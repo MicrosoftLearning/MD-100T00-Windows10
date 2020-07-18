@@ -49,30 +49,30 @@ applications.
 
 10. Close the Local Group Policy Editor.
 
-11. **Sign out.**
+11. Sign out of **LON-CL1**.
 
->    
 
 ### Task 2: Test the UAC prompts as a standard user
 
-1.  Login to **LON-CL1** as **Adatum\\Beth** with the password **Pa55w.rd**.
+1.  Sign in to **LON-CL1** as **Adatum\\Beth** with the password **Pa55w.rd**.
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.  
-    **Note**: The Windows operating system displays the User Account Control
-    prompt.
+    
+    _**Note**: The Windows operating system displays the User Account Control
+    prompt._
 
 3.  In the **User name** box, type **Administrator**, and in the **Password**
     box, type **Pa55w.rd**, and then select **Yes**.
 
 4.  Close the Windows PowerShell prompt.
 
-5.  **Sign out**.
+5.  Sign out of **LON-CL1**.
 
->    
+ 
 
 ### Task 3: Test the UAC prompts as an administrator
 
-1.  Login to **LON-CL1** as **Adatum\\Administrator** with the password
+1.  Sign in to **LON-CL1** as **Adatum\\Administrator** with the password
     **Pa55w.rd**.
 
 2.  In the **Type here to search** box on the taskbar, type **Control Panel**,
@@ -85,11 +85,10 @@ applications.
 
 5.  Verify that the slider is configured for **Always notify**.
 
-6.  Select Cancel
+6.  Select **Cancel**.
 
-7.  Close all open windows
+7.  Close all open windows.
 
->    
 
 **Results**: After completing this exercise you have configured the prompt
 behavior of UAC.

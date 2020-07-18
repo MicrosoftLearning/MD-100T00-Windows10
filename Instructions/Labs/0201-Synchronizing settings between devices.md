@@ -6,8 +6,8 @@ In this lab you will learn how to synchronize settings to support users working
 on multiple devices.
 
 
-*Dependency Note: Task 1 in Exercise 1 of this lab must be completed (or an
-available Microsoft ID) to perform additional labs later in this course.*
+_Dependency Note: Task 1 in Exercise 1 of this lab must be completed (or an
+available Microsoft ID) to perform additional labs later in this course._
 
 ### Scenario
 
@@ -71,8 +71,7 @@ number to receive the verification code._
 
 ### Task 2: Sign in and personalize the device
 
-1.  Sign in to **LON-CL1** as *Your first name + Last name’s first
-    letter***MD100\@outlook.com** with the password **Pa55w.rd123**.
+1.  Sign in to **LON-CL1** as **_Your first name_** + **_Your last name’s first letter_** + **MD100\@outlook.com** with the password **Pa55w.rd123**.
 
 2.  On the **Create a PIN** page select **Next**.
 

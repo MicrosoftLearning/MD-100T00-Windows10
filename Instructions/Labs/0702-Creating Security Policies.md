@@ -23,8 +23,7 @@ succession.
 1.  Sign in in to **LON-DC1** as **Adatum\\Administrator** with the password
     **Pa55w.rd**.
 
-2.  On **LON-DC1**, in Server **Manager**, in the Tools list, select **Group
-    Policy Management.**
+2.  On **LON-DC1**, in Server **Manager**, in the Tools list, select **Group Policy Management.**
 
 3.  In the Group Policy Management Console, expand
     **Forest:Adatum.com\\Domains\\Adatum.com**, and then select the **Group
@@ -49,7 +48,7 @@ succession.
 
 10. In the **Account Lockout Duration Properties** dialog box, select **Define
     This Policy Setting**, and then set the **Account Is Locked Out For** value
-    to **20** minutes. select **OK**.
+    to **20** minutes. Select **OK**.
 
 11. In the **Suggested Value Changes** dialog box, select **OK**.
 
@@ -77,7 +76,7 @@ succession.
     check box, and then select the **User must change password at next logon**
     check box. select **OK**.
 
->    
+
 
 ### Task 2: Refresh GPOs
 
@@ -87,11 +86,12 @@ succession.
 2.  In the Administrator: Windows PowerShell window, type the following command,
     and then press **Enter**:
 
->   Invoke-Gpupdate -force
+    ```
+    Invoke-Gpupdate -force
+    ```
 
-1.  Close the Active Directory Users and Computers and PowerShell window
+3.  Close the Active Directory Users and Computers and PowerShell window
 
- 
 
 ## Exercise 2: Testing Security Policies
 
@@ -99,8 +99,6 @@ succession.
 
 After configuring a more strict set of password policies you will then ask Abbi
 Skinner to test the policies.
-
- 
 
 ### Task 1: Change your password
 
@@ -130,9 +128,11 @@ Skinner to test the policies.
 9.  At the Windows PowerShell prompt, type the following command, and then press
     **Enter**:
 
->   gpupdate /force
+    ```
+    gpupdate /force
+    ```
 
-1.  Sign out.
+1.  Sign out of **LON-CL1**.
 
 ### Task 2: Attempt repeated sign-ins
 
@@ -154,7 +154,6 @@ Skinner to test the policies.
 6.  When the message displays that indicates that the referenced account is
     locked, and you may not sign in, select **OK**
 
->    
 
 **Results**: After completing this exercise you created a Security Policy that
 will affect the password settings for all domain users.

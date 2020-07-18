@@ -16,15 +16,14 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
  
 
-### Task 1: Enable sideloading
+### Task 1: Enable Sideloading
 
 1.  Sign in to **LON-CL2** as **Adatum\\Administrator** with the password
     **Pa55w.rd**.
 
-2.  On **LON-CL2** select **Start**, and then select the **Settings** icon..
+2.  On **LON-CL2** select **Start**, and then select the **Settings** icon.
 
-3.  Select **Update & Security**, and then in the navigation pane select **For
-    developers**.
+3.  Select **Update & Security**, and then in the navigation pane select **For developers**.
 
 4.  On the **For developers** tab, select **Sideload apps**.
 
@@ -32,7 +31,6 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 6.  Close **Settings**.
 
-###  
 
 ### Task 2: Install the required certificate
 
@@ -59,7 +57,7 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 8.  Sign out.
 
->    
+ 
 
 ### Task 3: Install and test an app
 
@@ -80,7 +78,6 @@ LeXProductsGrid81_1.1.0.2_AnyCPU certificate have been placed at
 
 7.  Close the app.
 
->    
 
 ### Task 4: Remove an app
 

@@ -29,7 +29,7 @@ like to still retain the user files on the PC.
     Protocol–enabled (DHCP-enabled) and that it has the IPv4 address
     172.16.0.41.
 
-6.  In the Windows PowerShell prompt, type sysdm.cpl and then press Enter.
+6.  In the Windows PowerShell prompt, type `sysdm.cpl` and then press **Enter**.
 
 7.  Verify that the device name is **LON-CL2** and that it is in the
     **Adatum.com** domain.
@@ -64,13 +64,13 @@ like to still retain the user files on the PC.
 
 3.  Right-click the **Start** icon, select **Windows PowerShell**.
 
-4.  In the **Windows PowerShell** prompt, type ipconfig /all and then press
+4.  In the **Windows PowerShell** prompt, type `ipconfig /all` and then press
     **Enter**,
 
 5.  Verify that the Ethernet connection is now Dynamic Host Configuration
     Protocol–enabled (DHCP-enabled).
 
-6.  In the Windows PowerShell prompt, type sysdm.cpl and then press **Enter**.
+6.  In the Windows PowerShell prompt, type `sysdm.cpl` and then press **Enter**.
 
 7.  Verify that the device name is LON-CL2 and that it is in the Adatum.com
     domain.

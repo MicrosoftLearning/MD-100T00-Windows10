@@ -90,7 +90,7 @@ Your company is planning to open a new branch office. To manage the devices in t
 
 6.  In the Remote Desktop Settings window select **Confirm**.
 
-7.  Close the **Settings** app.
+7.  Close the Settings app.
 
 **Results**: After completing this exercise, you will have enabled and tested the remote management functions of windows.
 
