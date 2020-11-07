@@ -86,7 +86,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 13. At the command prompt, type the following command, and then press **Enter**.
 
     ```
-    net view \\\\lon-cl1
+    net view \\lon-cl1
     ```
 
     _**Note**: This will show you all shares created on LON-CL1_
