@@ -192,7 +192,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
 
 10. Right-click the **empty space**, select **New**, select **Text Document**, and then type **File20** as the name of the file.
     
-    _**Note**: April has local file permissions to create a new file in the Marketing
+    _**Note**: Beth has local file permissions to create a new file in the Marketing
 	folder because you configured permissions by using the Advanced Sharing
 	feature. This modified only the share permissions, while the default local
 	file permissions were not modified. By default, Authenticated Users have the
@@ -202,7 +202,7 @@ Your manager has advised you to create file shares for the Marketing and IT depa
     pane, right-click the **empty space**, select **New**, select **Text
     Document**, and then type **File21** as the name of the file.
     
-    _**Note**: April is able to create a file, because you configured permissions by
+    _**Note**: Beth is able to create a file, because you configured permissions by
 	using File Sharing. Members of the IT group have local file permissions to
 	the IT folder._
     
