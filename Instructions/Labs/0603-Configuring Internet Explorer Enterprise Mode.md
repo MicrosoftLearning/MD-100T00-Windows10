@@ -136,7 +136,7 @@ Adatum is using a web based application for travel requests located at intranet.
 Copy C:\Windows\PolicyDefinitions\inetres.admx \\LON-DC1\SYSVOL\Adatum.com\Policies\PolicyDefinitions\inetres.admx
 ```
 ```
-Copy C:\Windows\PolicyDefinitions\en-US\inetres.adml \\\ON-DC1\SYSVOL\Adatum.com\Policies\PolicyDefinitions\en-US\inetres.adml
+Copy C:\Windows\PolicyDefinitions\en-US\inetres.adml \\LON-DC1\SYSVOL\Adatum.com\Policies\PolicyDefinitions\en-US\inetres.adml
 ```
 
 19.  Sign out of **LON-CL1**.
