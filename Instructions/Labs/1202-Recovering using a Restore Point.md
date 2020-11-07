@@ -36,7 +36,7 @@ return to a previous working state.
     **Enter**:
 
     ``` 
-    Checkpoint-Computer -Description "Lab Start"\
+    Checkpoint-Computer -Description "Lab Start"
     ```
 
 1.  When complete, close the PowerShell Window.
