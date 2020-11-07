@@ -115,7 +115,7 @@ Benjamin has filed an incident report that states that the Stock Viewer applicat
 4.  At the command prompt, type the following command, and then press **Enter**:
 
     ```
-    Sdbinst C:\\AdatumACT.sdb
+    Sdbinst C:\AdatumACT.sdb
     ```
 
 5.  On the desktop, on the taskbar, select the **File Explorer** icon.
