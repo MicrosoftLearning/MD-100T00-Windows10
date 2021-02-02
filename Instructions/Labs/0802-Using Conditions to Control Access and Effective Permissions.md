@@ -117,37 +117,39 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 16. Select **Start**, type **cmd** and then select **Command Prompt**
 
 17. At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`19. Review the output, and then **close** the command prompt.
+    `whoami /claims`
+  
+18. Review the output, and then **close** the command prompt.
     
     _**Note**: Nestor has a Country claim with the value of GB, so he cannot connect
 	to the IT share, even though he is a member of the IT group._
 
-18. Sign out of **LON-CL2**.
+19. Sign out of **LON-CL2**.
 
-19. Sign in to **LON-CL2** as **Adatum\\Max** with the password **Pa55w.rd**.
+20. Sign in to **LON-CL2** as **Adatum\\Max** with the password **Pa55w.rd**.
 
-20. Select **Start**, type **cmd** and then select **Command Prompt**.
+21. Select **Start**, type **cmd** and then select **Command Prompt**.
 
-21. At the command prompt, type the following command, `whoami /claims`, and then press **Enter**.
+22. At the command prompt, type the following command, `whoami /claims`, and then press **Enter**.
 
-22. Review the output, and then close the command prompt.
+23. Review the output, and then close the command prompt.
    
     _**Note**: Max is in the Research department, and his department claim has the
     value of Research._
 
-23. Select the **File Explorer** icon on the taskbar.
+24. Select the **File Explorer** icon on the taskbar.
 
-24. In File Explorer, type **\\\\LON-CL1** in the Address bar, and then press **Enter**.
+25. In File Explorer, type **\\\\LON-CL1** in the Address bar, and then press **Enter**.
 
-25. In the details pane, double-click **Research**, and then verify that Max can
+26. In the details pane, double-click **Research**, and then verify that Max can
     view the contents of the Research folder.
 
-26. In the details pane, right-click the **empty space**, select **New**, select
+27. In the details pane, right-click the **empty space**, select **New**, select
     **Text Document**, and then type **File60** as the name of the file.
     _**Note**: Max has permissions to create a new file in the Research share because
 	his department claim has a value of Research._
 
-27. Sign out of **LON-CL2**.
+8. Sign out of **LON-CL2**.
 
 ### Task 3: View effective permissions 
 
