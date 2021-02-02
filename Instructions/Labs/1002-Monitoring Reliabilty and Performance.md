@@ -93,7 +93,7 @@ Repeatedly users complained about the poor performance of LON-CL3 so you decided
 ### Task 2: Load the suspect app ###
 1.  On LON-CL3, In Windows Explorer, browse to **\\\\LON-DC1\\labfiles\\Support\\**.
 
-2.  In the content pane, double-click **CopyMonitor* to copy lab files to the local client.
+2.  In the content pane, double-click **CopyMonitor** to copy lab files to the local client.
 
 3.  On the taskbar, in the **Type here to search** type **cmd**. Right-click on Command Prompt and
     select **Run as Administrator**.
