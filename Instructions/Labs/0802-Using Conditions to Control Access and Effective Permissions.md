@@ -74,9 +74,9 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
 ### Task 2: Test conditions to control access 
 
-1.  Switch to **LON-CL1**.
+1.  Switch to **LON-CL2**.
 
-2.  Sign in to **LON-CL1** as **Adatum\\beth** with the password **Pa55w.rd**.
+2.  Sign in to **LON-CL2** as **Adatum\\beth** with the password **Pa55w.rd**.
 
 3.  Select the **File Explorer** icon on the taskbar.
 
@@ -98,7 +98,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
     _**Note**: Beth has permissions to create a new file in the IT share because she is a member of the IT group and her Country claim has a value of US._
 
-10. Sign out of **LON-CL1**.
+10. Sign out of **LON-CL2**.
 
 11.  Sign in to **LON-CL2** as **Adatum\\Nestor** with the password **Pa55w.rd**.
     
