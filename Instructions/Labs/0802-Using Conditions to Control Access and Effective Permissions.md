@@ -175,7 +175,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 	permissions to the folder, you can see that Bruno has no permissions	allowed._
 
 6.  In the Advanced Security Settings for Research dialog box, select **Include a
-    user claim**, select **department** in the drop-down list, **type Research**
+    user claim**, select **department** in the drop-down list, type **Research**
     in the Enter value here text box, and then select **View effective access**.
     
     _**Note**: You can see that if Bruno had the department user claim with the value
