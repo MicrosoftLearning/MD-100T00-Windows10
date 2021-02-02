@@ -102,7 +102,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
 11.  Sign in to **LON-CL2** as **Adatum\\Nestor** with the password **Pa55w.rd**.
     
-     _**Note**: Nestor is a member of the IT group.**_
+     _**Note**: Nestor is a member of the IT group._
 
 12. Select the **File Explorer** icon on the taskbar.
 
