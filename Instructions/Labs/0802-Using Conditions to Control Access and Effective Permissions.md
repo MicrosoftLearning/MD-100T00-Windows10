@@ -116,8 +116,7 @@ IT, Marketing, and Research all use LON-CL1, but require different permissions f
 
 16. Select **Start**, type **cmd** and then select **Command Prompt**
 
-17. At the command prompt, type the following command, and then press **Enter**
-    `whoami /claims`
+17. At the command prompt, type the following command `whoami /claims`, and then press **Enter**
   
 18. Review the output, and then **close** the command prompt.
     
