@@ -13,11 +13,11 @@ You have installed Windows 10 to a new device, LON-CL3. To finalize the setup yo
 
 2.  Right-click the empty space on the **Desktop**, and then select **Personalize**. 
 
-    _**Note**: There is no message indicating that some settings are hidden or managed by your organization__
+    __**Note**: There is no message indicating that some settings are hidden or managed by your organization__
 
 3.  In the **Background** dropdown, check if solid color is available.  
 
-    _**Note**: The dropdown is enabled and a different value can be selected.__
+    __**Note**: The dropdown is enabled and a different value can be selected.__
 
 4.  Close all open windows.
 
