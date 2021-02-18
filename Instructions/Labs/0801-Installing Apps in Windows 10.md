@@ -1,6 +1,5 @@
 # Practice Lab: Installing Apps in Windows 10
 
-
 ## Summary
 
 In this lab you will learn how install and update Microsoft Store Apps and how to install Microsoft 365 Apps for enterprise from Microsoft 365.
@@ -17,20 +16,20 @@ You need to test the download and update functionality of the Microsoft App Stor
 
 *Note: In some situations, the Windows Update service may be disabled. Use the following steps to validate and enable the Windows update service if needed. Not that this is not necessary to run in typical Windows 10 scenarios.*
 
-1.  Sign in to **SEA-WS1** as **Admin** with the password of **Pa55w.rd**.
-    
-2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
+1. Sign in to **SEA-WS1** as **Admin** with the password of **Pa55w.rd**.
 
-3.  In the **User Account Control** dialog box, select **Yes**.
+2. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
-4.  In the **Administrator: Windows PowerShell** window, type **the following
+3. In the **User Account Control** dialog box, select **Yes**.
+
+4. In the **Administrator: Windows PowerShell** window, type **the following
     command** and then press **Enter**.
 
-```
-Set-Service wuauserv -Startuptype Manual
-```
+    ```powershell
+    Set-Service wuauserv -Startuptype Manual
+    ```
 
-5.  Sign out of SEA-WS1.
+5. Sign out of SEA-WS1.
 
 ### Task 1: Install a Windows Store app
 
@@ -54,18 +53,18 @@ Set-Service wuauserv -Startuptype Manual
 
 ### Task 2: Configure app updates
 
-1.  In the **Microsoft Store** app, select the the **See more** ellipsis symbol on the menu bar, and then select **Settings**.
-2.  In **Settings**, under **App updates**, verify that **Update apps automatically** is set is enabled.
-3.  In the **Microsoft Store** app, select the **See more** icon on the menu bar, and then select **Downloads and updates**. Notice that there are several apps waiting to be updated.
-4.  Select **Update all**.
+1. In the **Microsoft Store** app, select the **See more** ellipsis symbol on the menu bar, and then select **Settings**.
+2. In **Settings**, under **App updates**, verify that **Update apps automatically** is set is enabled.
+3. In the **Microsoft Store** app, select the **See more** icon on the menu bar, and then select **Downloads and updates**. Notice that there are several apps waiting to be updated.
+4. Select **Update all**.
 
-5.  After the updates start, select **Pause all**.
+5. After the updates start, select **Pause all**.
 
-6.  Select **Start**, right-click **Feedback Hub**, and then select **Uninstall**.
-    
-7.  In the **This app and its related info will be uninstalled** dialog box, select **Uninstall**.
-    
-8.  Sign out of SEA-WS1.
+6. Select **Start**, right-click **Feedback Hub**, and then select **Uninstall**.
+
+7. In the **This app and its related info will be uninstalled** dialog box, select **Uninstall**.
+
+8. Sign out of SEA-WS1.
 
 **Results**: After completing this exercise, you will have installed a Microsoft Store app, managed Microsoft Store app updates, and uninstalled an app.
 
@@ -78,10 +77,10 @@ You have been asked to configure the deployment of the Office 365 apps included 
 ### Task 1: Assign a Microsoft 365 license
 
 1. Sign in to **SEA-WS1** with your Microsoft account and the PIN **1029**.
-2. In the taskbar, select the **Microsoft Edge **icon.
-3. In the address bar, enter http://portal.office.com.
+2. In the taskbar, select the **Microsoft Edge** icon.
+3. In the address bar, enter <http://portal.office.com>.
 4. In the **Sign in** dialog box, enter your admin email address as provided by your instructor. It should be in the form of admin@M365xXXXXXX.onmicrosoft.com and then select **Next**.
-5. At the **Enter password** dialog box, enter the password as provided by your instructor. When prompted to save the password, select **Save**. 
+5. At the **Enter password** dialog box, enter the password as provided by your instructor. When prompted to save the password, select **Save**.
 6. When prompted to **Stay signed in**, select **Yes**.
 7. From the App Launcher, select **Admin**.
 8. In the Microsoft 365 admin center, in the Navigation menu, expand **Users**, and then select **Active users**.
@@ -92,7 +91,7 @@ You have been asked to configure the deployment of the Office 365 apps included 
 
 ### Task 2: Configure Office installation options
 
-1. In the Microsoft 365 admin center, in the Navigation menu, expand **Settings**, and then select **Org settings **.
+1. In the Microsoft 365 admin center, in the Navigation menu, expand **Settings**, and then select **Org settings**.
 2. In the **Org settings** page, on the **Services** page, select **Office installation options**.
 3. On the Office installation options page, under Feature updates, select **Once a month (Monthly Enterprise Channel)**.
 4. Under Office apps that users can install, remove the check box next to **Skype for Business (Standalone)**, and then select **Save**.
@@ -102,11 +101,11 @@ You have been asked to configure the deployment of the Office 365 apps included 
 
 ### Task 3: Install Microsoft 365 Apps for Enterprise
 
-1. On SEA-WS1, in the taskbar, select the **Microsoft Edge **icon.
-2. In the address bar, enter http://portal.office.com.
+1. On SEA-WS1, in the taskbar, select the **Microsoft Edge** icon.
+2. In the address bar, enter <http://portal.office.com>.
 3. On the Pick an account prompt, select **Use another account**.
 4. In the **Sign in** dialog box, enter User2@M365xXXXXXX.onmicrosoft.com and then select **Next**.
-5. At the **Enter password** dialog box, enter **Pa55w.rd1234** and then select **Sign in**. When prompted to save the password, select **Save**. 
+5. At the **Enter password** dialog box, enter **Pa55w.rd1234** and then select **Sign in**. When prompted to save the password, select **Save**.
 6. Close all welcome and introduction pages.
 7. On the Office 365 page, select **Got it!** close the Office 365 apps prompt.
 8. Select **Install Office** and then select **Other install options**.
@@ -119,6 +118,6 @@ You have been asked to configure the deployment of the Office 365 apps included 
 15. On SEA-WS1, select the Start menu and verify that the Office apps display. For example, you should see Word, PowerPoint, and Excel in addition to the other apps included in this subscription.
 16. Close Microsoft Edge and sign out of SEA-WS1.
 
-**Results**: After completing this exercise, you will have configured the deployment of the Office 365 apps included in Microsoft 365 and validated an installation of the apps. 
+**Results**: After completing this exercise, you will have configured the deployment of the Office 365 apps included in Microsoft 365 and validated an installation of the apps.
 
 **END OF LAB**

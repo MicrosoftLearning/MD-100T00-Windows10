@@ -2,164 +2,171 @@
 
 ## Summary
 
-In this exercise you will learn how to use Performance Monitor to monitor the performance of a Windows device.
+In this lab, you will learn how to use Task Manager and Reliability Monitor to review Windows 10 reliability and performance. You will also learn how to configure and use Performance Monitor to identify performance issues for a Windows 10 device.
 
-_Dependency Notice: LON-CL3 needs to be joined to the domain if the_ Joining a Domain _lab was not performed._
+## Exercise 1: Review Windows 10 performance using Task Manager and Reliability Monitor
 
 ### Scenario
 
-Repeatedly users complained about the poor performance of LON-CL3 so you decided to use Performance Monitor to identify potential bottlenecks. The script MonitorScenario.vbs located on should provoke the bad performance on the device. While the script runs you plan to monitor the values for: Memory Pages per second, Network Interface Packets per second, Physical Disk % Disk Time, Physical Disk Avg. Disk Queue Length, Processor % Processor Time and System Processor Queue Length
+A user reports performance and speed issues with a client workstation named SEA-CL1. Your first step is to review the Task Manager and Reliability Monitor on SEA-CL1 to identify any noticeable or consistent issues that may be reported  on the computer.
+
+### Task 1: Use Task Manager to review performance
+
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password: **Pa55w.rd**.
+2. Right-click the taskbar and then select **Task Manager**.
+3. In the Task Manager window, select **More details**.
+4. In the Task Manager window, on the Processes tab, review the running processes.
+5. On the taskbar, select **Start**, and then on the Start menu select **Word**.
+6. Minimize the **Word** window and then switch to the **Task Manager**. Take note of the **Microsoft Word (32 bit)** process. Also take note of the CPU and Memory used by the application.
+7. In the Task Manager, select the **Performance** tab. Take note of the real-time performance of the CPU, Memory and Disk resources.
+8. In the Task Manager, select the **App history** tab. Take note of the resource usage and then select **Delete usage history** to reset the counters.
+9. In the Task Manager, select the **Startup** tab. Take note of the apps that start up when Windows starts. This will help you identify if any startup apps may be contributing to the performance issues on SEA-CL1.
+10. In the Task Manager, select the **Details** tab. Take note of the specific executables running on the machine. This will allow you to identify CPU and Memory usage for specific executables.
+11. In the Task Manager, select the **Services** tab. Take note of the services that are running and stopped. You can use this view to Start, Stop, and Restart services as needed.
+12. In the Task Manager, select the **Processes** tab.
+13. Under Apps, right-click **Microsoft Word (32-bit)** and then select **End task**. This will end the process and force the app to close.
+14. Close Task Manager.
+
+### Task 2: Review reliability history using Reliability Monitor
+
+1. On SEA-CL1, on the taskbar, select **Start**, type **reliability**, and then select **View reliability history.** The **Reliability Monitor** opens.
+2. In the Reliability Monitor window, select any date that contains an information or warning notification.
+3. In the Reliability details section, next to a Warning or Informational event, select **View technical details**.
+4. Review the details and then select **OK**.
+5. Close the Reliability Monitor.
+6. Sign out of SEA-CL1.
+
+**Results**: After completing this exercise, you will have successfully reviewed performance and reliability history using the Task Manager and Reliability Monitor.
+
+## Exercise 2: Monitor Windows 10 using Performance Monitor
+
+### Scenario
+
+You need to use Performance Monitory to identify performance bottlenecks on  the Windows 10 workstation named SEA-CL1. You have developed a script named MonitorScenario.vbs that will simulate and provoke the bad performance on SEA-CL1. While the script runs you plan to monitor the values for  Network Interface Packets per second, PhysicalDisk % Disk Time, PhysicalDisk Avg. Disk Queue Length, Processor % Processor Time and System Processor Queue Length.
 
 ### Task 1: Use Performance Monitor to gather a baseline
 
-1. Sign in to **LON-CL3** as **adatum\\Administrator** with the password: **Pa55w.rd**.
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password: **Pa55w.rd**.
 
-1. On **LON-CL3**, select **Start**, type **performance**, and then select **Performance
-    Monitor**.
+2. Select **Start**, type **performance**, and then select **Performance Monitor**.
 
-1. In **Performance Monitor**, in the navigation pane, expand **Data Collector
-    Sets**.
+3. In **Performance Monitor**, in the navigation pane, expand **Data Collector Sets**.
 
-1. Select **User Defined**, right-click **User Defined**, point to **New**, and
-    then select **Data Collector Set**.
+4. Select **User Defined**, right-click **User Defined**, point to **New**, and then select **Data Collector Set**.
 
-1. In the **Create new Data Collector Set Wizard**, on the **How would you like
-    to create this new data collector set?** page, in the **Name** text box,
-    type **Adatum Baseline**.
+5. In the **Create new Data Collector Set** wizard, on the **How would you like to create this new data collector set?** page, in the **Name** text box, type **Contoso Baseline**.
 
-1. Select **Create manually (Advanced)**, and then select **Next**.
+6. Select **Create manually (Advanced)**, and then select **Next**.
 
-1. On the **What type of data do you want to include?** page, select the
-    **Performance counter** check box, and then select **Next**.
+7. On the **What type of data do you want to include?** page, select the **Performance counter** check box, and then select **Next**.
 
-1. On the **Which performance counters would you like to log?** page, in the
-    **Sample interval** field, type **1**, and then select **Add**.
+8. On the **Which performance counters would you like to log?** page, in the **Sample interval** field, type **1**, and then select **Add**.
 
-1. In the **Available counters** list, expand **Memory**, select **Pages/sec**,
-    and then select **Add**.
+9. In the **Available counters** list, expand **Network Interface**, select **Packets/sec**, and then select **Add**.
 
-1. In the **Available counters** list, expand **Network Interface**, select
-    **Packets/sec**, and then select **Add**.
+10. In the **Available counters** list, expand **PhysicalDisk**, select **% Disk Time**, and then select **Add**.
 
-1. In the **Available counters** list, expand **Physical Disk**, select **% Disk
-    Time**, and then select **Add**.
+11. Under **PhysicalDisk**, select **Avg. Disk Queue Length**, and then select **Add**.
 
-1. Under **Physical Disk**, select **Avg. Disk Queue Length**, and then select
-    **Add**.
+12. In the **Available counters** list, expand **Processor**, select **% Processor Time**, and then select **Add**.
 
-1. In the **Available counters** list, expand **Processor**, select **%
-    Processor Time**, and then select **Add**.
+13. In the **Available counters** list, expand **System**, select **Processor Queue Length**, select **Add**, and then select **OK**.
 
-1. In the **Available counters** list, expand **System**, select **Processor
-    Queue Length**, select **Add**, and then select **OK**.
+14. On the **Which performance counters would you like to log?** page, select **Next**.
 
-1. On the **Which performance counters would you like to log?** page, select
-    **Next**.
+15. On the **Where would you like the data to be saved?** page, select **Next**.
 
-1. On the **Where would you like the data to be saved?** page, select **Next**.
+16. On the **Create the data collector set?** page, select **Finish**.
 
-1. On the **Create the data collector set?** page, select **Finish**.
+17. In **Performance Monitor**, in the details pane, right-click **Contoso Baseline**, and then select **Start**.
 
-1. In **Performance Monitor**, in the details pane, right-click **Adatum
-    Baseline**, and then select **Start**.
+18. Select **Start**, and then select **Word**.
 
-1. Select **Start**, and then select **Word 2016**.
+19. Select **Start**, and then select **Excel**.
 
-1. Select **Start**, and then select **Excel 2016**.
+20. Select **Start**, and then select **PowerPoint**.
 
-1. Select **Start**, and then select **PowerPoint 2016**.
+21. Close all open Microsoft Office apps, and then switch to **Performance Monitor**.
 
-1. Close all open Microsoft Office 2016 apps, and then switch to **Performance
-    Monitor**.
+22. In the navigation pane, right-click **Contoso Baseline**, and then select **Stop**.
 
-1. In the navigation pane, right-click **Adatum Baseline**, and then select
-    **Stop**.
+23. In **Performance Monitor**, in the navigation pane, expand **Reports**, expand **User Defined**, expand **Contoso Baseline**, and then select the report that has a name beginning with **SEA-CL1**.
 
-1. In **Performance Monitor**, in the navigation pane, expand **Reports**,
-    expand **User Defined**, expand **Adatum Baseline**, and then select the
-    report that has a name beginning with **LON-CL3**.
+24. View the chart. On the menu bar, select the drop-down arrow, and then select **Report**.
 
-1. View the chart. On the menu bar, select the drop-down arrow, and then select
-    **Report**.
+25. Record the following values:
 
-1. Record the following values:
+    - Network Interface Packets per second
 
-    - Memory Pages per second \_______\_
-    - Network Interface Packets per second \_______\_
-    - Physical Disk % Disk Time \_______\_
-    - Physical Disk Avg. Disk Queue Length \_______\_
-    - Processor % Processor Time \_______\_
-    - System Processor Queue Length \_______\_
+    - PhysicalDisk % Disk Time
 
-### Task 2: Load the suspect app
+    - PhysicalDisk Avg. Disk Queue Length
 
-1. On LON-CL3, In Windows Explorer, browse to **\\\\LON-DC1\\labfiles\\Support\\**.
+    - Processor % Processor Time
 
-1. In the content pane, double-click **CopyMonitor* to copy lab files to the local client.
+    - System Processor Queue Length
 
-1. On the taskbar, in the **Type here to search** type **cmd**. Right-click on Command Prompt and
-    select **Run as Administrator**.
+### Task 2: Simulate load using the load generator script
+
+1. On SEA-CL1, open File Explorer, and browse to **\\\\SEA-DC1\\labfiles\\Support\\**.
+
+2. In the content pane, double-click **CopyMonitor.bat** to copy lab files to the local client.
+
+3. Click Start, type **cmd**. Right-click on **Command Prompt** and select **Run as administrator**.
 
     _**Note**: The following step initiates a script which generates a resource load. Be sure to continue on to Task 3 **immediately**, before the script completes._
 
-1. In the Command Prompt Windows, type the following followed by **Enter**:
-  
-    ```bat
+4. In the Command Prompt Window, type each of the following commands and press **Enter**:
+
+    ```powershell
     cd \Monitor
     MonitorScenario.vbs
     ```
 
 ### Task 3: Use Performance Monitor to identify possible bottlenecks
 
-1. On LON-CL3, switch to **Performance Monitor**.
+1. On SEA-CL1, switch to **Performance Monitor**.
 
-1. Under **Data Collector Sets**, select **User Defined**.
+2. Under **Data Collector Sets**, select **User Defined**.
 
-1. Right-click **Adatum Baseline**, and then select **Start**.
+3. Right-click **Contoso Baseline**, and then select **Start**.
 
-1. On the taskbar, in the **Type here to search** type **perfmon /res**, and
-    then press **Enter**.
+4. On the taskbar, in the **Type here to search** type **perfmon /res**, and then press **Enter**.
 
-1. In **Resource Monitor**, which components are under strain?
+5. In **Resource Monitor**, which components are under strain?
 
-    _**Note**: Answers will vary depending upon the usage scenario and host configuration,
-    although central processing unit (CPU) and network are likely to be used
-    heavily._
+    _**Note**: Answers will vary depending upon the usage scenario and host configuration, although central processing unit (CPU) and network are likely to be used heavily._
 
-1. After a few minutes, in the **Windows Script Host** prompt, select **OK**.
+6. After a few minutes, in the **Windows Script Host** prompt, select **OK**.
 
     _**Note**: Check the taskbar to see if this dialog may be hidden._
 
-1. Wait for the instance of the Command Prompt windows launched by the script to close.
+7. Wait for the instance of the Command Prompt windows launched by the script to close.
 
-1. Switch to **Performance Monitor**.
+8. Switch to **Performance Monitor**.
 
-1. In the navigation pane, right-click **Adatum Baseline**, and then select **Stop**.
+9. In the navigation pane, right-click **Contoso Baseline**, and then select **Stop**.
 
-1. In **Performance Monitor**, in the navigation pane, expand **Reports**,
-    expand **User Defined**, expand **Adatum Baseline**, and then select the
-    **second report** that has a name beginning with **LON-CL3**.
+10. In **Performance Monitor**, in the navigation pane, expand **Reports**, expand **User Defined**, expand **Contoso Baseline**, and then select the **second report** that has a name beginning with **SEA-CL1**.
 
-1. View the chart.
+11. View the chart.
 
-1. On the menu bar, select the drop-down arrow, and then select **Report**.
+12. On the menu bar, select the drop-down arrow, and then select **Report**.
 
-1. Record the component details:
+13. Record the component details:
 
-    - Memory Pages per second \_______\_
-    - Network Interface Packets per second \_______\_
-    - Physical Disk % Disk Time \_______\_
-    - Physical Disk Avg. Disk Queue Length \_______\_
-    - Processor % Processor Time \_______\_
-    - System Processor Queue Length \_______\_
+    - Network Interface Packets per second
+    - PhysicalDisk % Disk Time
+    - PhysicalDisk Avg. Disk Queue Length
+    - Processor % Processor Time
+    - System Processor Queue Length
 
-1. In your opinion, which components is the script affecting the most?
+14. In your opinion, which components is the script affecting the most?
 
-    _**Note**: The script is affecting the CPU and network, but it is also affecting all
-    counters._
+    _**Note**: The script is affecting the CPU and network, but it is also affecting all counters._
 
-1. Close all open windows.
+15. Close all open windows and sign out of SEA-CL1.
 
-**Results**: After completing this exercise, you will have successfully determined the cause of a performance bottleneck.
+**Results**: After completing this exercise, you will have successfully use Performance Monitor to determine the cause of a performance bottleneck.
 
-## END OF LAB
+**END OF LAB**
