@@ -1,4 +1,4 @@
-# Practice Lab: Deploying Windows using Windows ADK tools 
+# Practice Lab: Deploying Windows using Windows ADK tools
 
 ## Summary
 
@@ -10,68 +10,68 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
 
 ### Task 1: Identify the Windows ADK tools
 
-1.  Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
-2.  On the taskbar, select **Start** and then select **Control Panel**.
-3.  Select **Programs**, and then select **Programs and Features**. Notice that the **Windows Assessment and Deployment Kit - Windows 10** and the **Windows Assessment and Deployment Kit Windows Preinstallation Environment Add-ons - Windows 10** programs are installed.
-4.  Select **Windows Assessment and Deployment Kit - Windows 10** and then select **Change**.
-5.  On the **Maintain your Windows Assessment and Deployment Kit - Windows 10 features** page, ensure that **Change** is selected and then select **Next**.
-6.  Notice the features that have been installed on SEA-SVR2. Features include:
+1. Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+2. On the taskbar, select **Start** and then select **Control Panel**.
+3. Select **Programs**, and then select **Programs and Features**. Notice that the **Windows Assessment and Deployment Kit - Windows 10** and the **Windows Assessment and Deployment Kit Windows Preinstallation Environment Add-ons - Windows 10** programs are installed.
+4. Select **Windows Assessment and Deployment Kit - Windows 10** and then select **Change**.
+5. On the **Maintain your Windows Assessment and Deployment Kit - Windows 10 features** page, ensure that **Change** is selected and then select **Next**.
+6. Notice the features that have been installed on SEA-SVR2. Features include:
     - Deployment Tools
     - Imaging and Configuration Designer (ICD)
     - Configuration Designer
     - User State Migration Tool (USMT)
     - Microsoft User Experience Virtualization (UE-V) Template
-7.  Select **Cancel** to close the wizard. Select **Yes** and then select **Close**.
-8.  Close the **Programs and Features** window.
-
+7. Select **Cancel** to close the wizard. Select **Yes** and then select **Close**.
+8. Close the **Programs and Features** window.
 
 ### Task 2: Create bootable Windows PE media
 
-1.  On SEA-SVR2, select **Start**, expand **Windows Kits**, and then select **Deployment and Imaging Tools Environment**.
+1. On SEA-SVR2, select **Start**, expand **Windows Kits**, and then select **Deployment and Imaging Tools Environment**.
 
-2.  At the command prompt type `copype amd64 E:\WinPE`. The Windows PE working files are installed to the target location.
+2. At the command prompt type `copype amd64 E:\WinPE`. The Windows PE working files are installed to the target location.
 
-3.  Open **File Explorer** and then browse to **E:\\WinPE**. 
+3. Open **File Explorer** and then browse to **E:\\WinPE**.
 
-4.  In the **WinPE** folder, select the **media** folder and then select the **sources** folder. Notice the **boot.wim** file located in this folder. This is the boot image that is used for a default configuration of Windows PE. 
-5.  Close **File Explorer**.
+4. In the **WinPE** folder, select the **media** folder and then select the **sources** folder. Notice the **boot.wim** file located in this folder. This is the boot image that is used for a default configuration of Windows PE.
+5. Close **File Explorer**.
 
 6. At the command prompt type the following command to create the Windows PE media in ISO format:
 
-```
-MakeWinPEMedia /ISO E:\WinPE E:\WinPE\WindowsPE_amd64.iso
-```
+    ```
+    MakeWinPEMedia /ISO E:\WinPE E:\WinPE\WindowsPE_amd64.iso
+    ```
 
-7. Open **File Explorer** and then browse to **E:\\WinPE**. Notice the **WindowsPE_amd64.iso** file located in this folder. This ISO file will be used to boot an Windows 10 installation to be captured as a gold image.
+7. Open **File Explorer** and then browse to **E:\\WinPE**. Notice the **WindowsPE_amd64.iso** file located in this folder. This ISO file will be used to boot a Windows 10 installation to be captured as a gold image.
 
 8. Close **File Explorer**.
+
 ### Task 3: Prepare a Windows 10 computer to be imaged
 
-1.  On SEA-SVR2, on the taskbar, select **Hyper-V Manager**.
+1. On SEA-SVR2, on the taskbar, select **Hyper-V Manager**.
 
-2.  In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **GoldImage1**.
+2. In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **GoldImage1**.
 
 3. From the **Action** menu, select **Checkpoint**. A checkpoint is created as shown in the **Checkpoints** pane.
 
 4. From the **Action** menu, select **Connect**, and then select **Start**. After the virtual machine starts, maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window.
 
-5. Sign in to **GoldImage1** as **Admin** with the password of **Pa55w.rd**. 
+5. Sign in to **GoldImage1** as **Admin** with the password of **Pa55w.rd**.
 
 6. Select the **Start** button, type **command**, and then select **Run as administrator**. At the User Account Control, select **Yes** to open the command prompt with administrative credentials.
 
 7. At the command prompt, ensure that you are at **C:\\Windows\\System32**, and then type the following command and then press Enter:
 
-```
-cd sysprep
-```
+    ```
+    cd sysprep
+    ```
 
 8. At the **C:\\Windows\\System32\\Sysprep** prompt, type the following command and then press Enter:
 
-```
-sysprep
-```
+    ```
+    sysprep
+    ```
 
-9. At the **System Preparation Tool 3.1.4** dialog box, ensure that **System Cleanup Action** shows **Enter System Out-of-Box Experience (OOBE)** and then select the check box next to **Generalize**. 
+9. At the **System Preparation Tool 3.1.4** dialog box, ensure that **System Cleanup Action** shows **Enter System Out-of-Box Experience (OOBE)** and then select the check box next to **Generalize**.
 
 10. Under **Shutdown Options**, select **Shutdown**.
 
@@ -86,7 +86,9 @@ sysprep
 3. Browse to **E:\\WinPE**, select **WindowsPE_amd64.iso**, and then select **Open**. You have attached the Windows PE boot disk to the virtual machine.
 
 4. In the GoldImage1 window, from the **Action** menu, select **Start**.
-5. As the computer starts, click in the GoldImage1 window and continually press the spacebar to boot from the CD. After the virtual machine starts, maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window. Note: If you miss the option to boot from the CD, revert GoldImage1 and redo Task 3.
+5. As the computer starts, click in the GoldImage1 window and continually press the spacebar to boot from the CD. After the virtual machine starts, maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window.
+
+    >Note: If you miss the option to boot from the CD, revert GoldImage1 and redo Task 3.
 
 6. At the command prompt type the following command to configure IP settings for Windows PE:
 
@@ -104,13 +106,13 @@ sysprep
 
    It will take approximately 15 minutes for the image capture to complete. Continue with the next task while the image capture progresses.
 
-### Task 5: Deploy a captured Windows 10 image 
+### Task 5: Deploy a captured Windows 10 image
 
-1.  In Hyper-V Manager, select **SEA-SVR2** and then in the Actions pane, select **New** and then select **Virtual Machine**.
+1. In Hyper-V Manager, select **SEA-SVR2** and then in the Actions pane, select **New** and then select **Virtual Machine**.
 
 2. On the **Before you Begin** page, select **Next**.
 
-3. On the **Specify Name and Location** page, in the **Name** box type **Computer1**. 
+3. On the **Specify Name and Location** page, in the **Name** box type **Computer1**.
 
 4. Select the check box next to **Store the virtual machine in a different location** and then next to **Location** type **E:\\Labfiles\\VirtualMachines**. Select **Next**.
 
@@ -190,9 +192,9 @@ sysprep
 
     `F:`
 
-    `bcdboot G:\Windows` 
+    `bcdboot G:\Windows`
 
-21. Restore the Computer1 window and then from the **Acton** menu, select **Reset**. In the message box, select **Reset**. Computer1 restarts. It will take several minutes for the computer to initialize, and will restart.
+21. Restore the Computer1 window and then from the **Action** menu, select **Reset**. In the message box, select **Reset**. Computer1 restarts. It will take several minutes for the computer to initialize, and will restart.
 
 22. After Computer1 initializes, complete the following setup tasks:
 
@@ -232,7 +234,7 @@ sysprep
 
 35. Select **Restart later**.
 
-36. Shut down Computer1. 
+36. Shut down Computer1.
 
 37. On SEA-SVR2, leave Hyper-V Manager open for the next practice lab.
 

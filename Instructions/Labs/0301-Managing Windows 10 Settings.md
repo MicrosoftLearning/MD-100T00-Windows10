@@ -1,6 +1,5 @@
 # Practice Lab: Managing Windows 10 Settings
 
-
 ## Summary
 
 In this lab you will learn how to configure computer settings using Windows Settings, the Control Panel, and Windows PowerShell. You also learn how to customize and deploy a custom Windows 10 Start page layout.
@@ -11,34 +10,34 @@ In this lab you will learn how to configure computer settings using Windows Sett
 
 You need to use Windows Settings to validate protection settings, device specifications, and Windows specifications. You also need to determine which applications are slowing down the startup process for Windows 10. Finally, you need to create a new power plan that minimizes power usage, but does not impact multimedia presentations while the device is running on battery.
 
- ### Task 1: Using Windows Settings
+### Task 1: Using Windows Settings
 
-1.  Sign in to SEA-CL1 as **Contoso\\Administrator** with the password **Pa55w.rd**.
-2.  Select **Start,** and then select the **Settings** icon. 
-3.  In **Windows Settings**, select **System**, and then select **About**. Take note of the protection settings, Device specifications, and Windows specifications.
-4.  Select **Storage**. Take note of the storage information including how storage is used on the device.
-5.  Select **Multitasking**. In the Multitasking page, under **Timeline** disable the **Show suggestions in your timeline** option.
-6.  Select **Home**.
-7.  In **Windows Settings**, select **Apps**, and then select **Apps & features**. Take note of the Apps & features installed on the device.
-8.  Select **Startup**. Take note of the apps that are configured to start when you sign in to the device. Notice that Microsoft OneDrive has a high impact to the startup of the device.
-9.  In the **Startup** page, disable the **Microsoft OneDrive** option. This will prevent OneDrive from starting automatically.
-10.  Select **Home**.
-11.  Close **Windows Settings**. 
+1. Sign in to SEA-CL1 as **Contoso\\Administrator** with the password **Pa55w.rd**.
+2. Select **Start,** and then select the **Settings** icon.
+3. In **Windows Settings**, select **System**, and then select **About**. Take note of the protection settings, Device specifications, and Windows specifications.
+4. Select **Storage**. Take note of the storage information including how storage is used on the device.
+5. Select **Multitasking**. In the Multitasking page, under **Timeline** disable the **Show suggestions in your timeline** option.
+6. Select **Home**.
+7. In **Windows Settings**, select **Apps**, and then select **Apps & features**. Take note of the Apps & features installed on the device.
+8. Select **Startup**. Take note of the apps that are configured to start when you sign in to the device. Notice that Microsoft OneDrive has a high impact to the startup of the device.
+9. In the **Startup** page, disable the **Microsoft OneDrive** option. This will prevent OneDrive from starting automatically.
+10. Select **Home**.
+11. Close **Windows Settings**.
 
 ### Task 2: Using Control Panel
 
-1.  Select **Start** and type **Control Panel**. Press **Enter**.
-2.  In the Control Panel window, select **Hardware and Sound** and then select **Power Options**.
-3.  Select **Create a power plan.**
-4.  In the **Plan name** box, enter **Power Save - Presentation** and select **Next**.
-5.  Select **Create**.
-6.  Under **Preferred plans**, next to **Power Save - Presentation**, select **Change plan settings**.
-7.  Select **Change advanced power settings**.
-8.  Expand **Hard disk** and then expand **Turn off hard disk after**. Change the setting to **60** minutes.
-9.  Scroll down and expand the **Multimedia settings** option.
-10.  Expand the **When playing video** option and change the setting to **Balanced**.
-11.  Select **OK** to close the **Power Options** dialog box.
-12.  Close all open windows.
+1. Select **Start** and type **Control Panel**. Press **Enter**.
+2. In the Control Panel window, select **Hardware and Sound** and then select **Power Options**.
+3. Select **Create a power plan.**
+4. In the **Plan name** box, enter **Power Save - Presentation** and select **Next**.
+5. Select **Create**.
+6. Under **Preferred plans**, next to **Power Save - Presentation**, select **Change plan settings**.
+7. Select **Change advanced power settings**.
+8. Expand **Hard disk** and then expand **Turn off hard disk after**. Change the setting to **60** minutes.
+9. Scroll down and expand the **Multimedia settings** option.
+10. Expand the **When playing video** option and change the setting to **Balanced**.
+11. Select **OK** to close the **Power Options** dialog box.
+12. Close all open windows.
 
 **Results:** After finishing this exercise you will have configured computer settings using Windows Settings and the Control Panel.
 
@@ -50,74 +49,73 @@ You need to use Windows PowerShell to test the scripting environment. To become 
 
 ### Task 1: Use Windows PowerShell to configure a device
 
-1.  Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd.**
+1. Sign in to **SEA-CL1** as **Contoso\\Administrator** with the password **Pa55w.rd.**
 
-2.  Select **Start** and type **PowerShell**. Select **Run as Administrator**. 
+2. Select **Start** and type **PowerShell**. Select **Run as Administrator**.
 
-3.  At the PowerShell window, type the following and then press **Enter**:
+3. At the PowerShell window, type the following and then press **Enter**:
 
-```
-Get-ExecutionPolicy
-```
+    ```powershell
+    Get-ExecutionPolicy
+    ```
 
-4.  Confirm the current setting of the PowerShell execution policy is set to **Restricted.**
+4. Confirm the current setting of the PowerShell execution policy is set to **Restricted.**
 
-5.  If the execution policy is set to **Restricted**, change it to **Unrestricted** by running the following command at the PowerShell window:
+5. If the execution policy is set to **Restricted**, change it to **Unrestricted** by running the following command at the PowerShell window:
 
-```
-Set-ExecutionPolicy Unrestricted
-```
+    ```powershell
+    Set-ExecutionPolicy Unrestricted
+    ```
 
-6.  Confirm that the execution policy is now **Unrestricted**.
+6. Confirm that the execution policy is now **Unrestricted**.
 
-7.  At the PowerShell window, launch Notepad by typing the following command and then press **Enter**:
+7. At the PowerShell window, launch Notepad by typing the following command and then press **Enter**:
 
-```
-Start-Process Notepad
-```
+    ```powershell
+    Start-Process Notepad
+    ```
 
-8.  At the PowerShell window, type the following command and then press **Enter**:
+8. At the PowerShell window, type the following command and then press **Enter**:
 
-```
-Get-Process
-```
+    ```powershell
+    Get-Process
+    ```
 
-9.  Review the list of all running processes. Identify that Notepad is running and note the Process ID.
+9. Review the list of all running processes. Identify that Notepad is running and note the Process ID.
 
-10.  At the PowerShell window, type the following command and then press **Enter**. Replace [ID] with the Process ID identified in step 9.
+10. At the PowerShell window, type the following command and then press **Enter**. Replace [ID] with the Process ID identified in step 9.
 
-```
-Stop-Process -Id [ID]
-```
+    ```powershell
+    Stop-Process -Id [ID]
+    ```
 
-11.  Verify that the Notepad window is no longer open.
+11. Verify that the Notepad window is no longer open.
 
-12.  At the PowerShell window, list the application log entries by typing the following command and then press **Enter**:
+12. At the PowerShell window, list the application log entries by typing the following command and then press **Enter**:
 
-```
-Get-EventLog -LogName "Application"
-```
+    ```powershell
+    Get-EventLog -LogName "Application"
+    ```
 
-12.  Select **Start** and type **Telnet**. Select **Turn Windows features on and off**.
+13. Select **Start** and type **Telnet**. Select **Turn Windows features on and off**.
 
-13.  In the **Windows Features** window, verify that **Telnet Client** is not selected.
+14. In the **Windows Features** window, verify that **Telnet Client** is not selected.
 
-14.  At the PowerShell Window, type the following command, and then press **Enter**:
+15. At the PowerShell Window, type the following command, and then press **Enter**:
 
-```
-Enable-WindowsOptionalFeature -Online -FeatureName "TelnetClient"
-```
+    ```powershell
+    Enable-WindowsOptionalFeature -Online -FeatureName "TelnetClient"
+    ```
 
-_Note: This will install the Telnet Client windows feature._
+    _Note: This will install the Telnet Client windows feature._
 
-15.  Select **Start** and type **Telnet**. Select **Open**.
+16. Select **Start** and type **Telnet**. Select **Open**.
 
-16.  Close all open windows.
-
+17. Close all open windows.
 
 ### Task 2: Use a Windows PowerShell Script
 
-1. In the **Type here to search** box, type **\\\SEA-DC1\\Labfiles** and then press Enter.
+1. In the **Type here to search** box, type **\\\\SEA-DC1\\Labfiles** and then press Enter.
 
 2. In the content pane, double-click the **Configure** folder.
 
@@ -129,11 +127,11 @@ _Note: This will install the Telnet Client windows feature._
 
 6. Read the script, and then note what the script is doing, according to the following note.
 
-   -   _Note:_
-   -   _Comments are green._
-   -   _Variables are red._
-   -   _Cmdlets are bright blue._
-   -   _Text in quotation marks is dark red._
+    **Note:**
+    - _Comments are green._
+    - _Variables are red._
+    - _Cmdlets are bright blue._
+    - _Text in quotation marks is dark red._
 
 7. Select line 3 in the script, and then select **Run selection (F8)**.
 
@@ -157,11 +155,11 @@ _Note: This will install the Telnet Client windows feature._
 
 14. In the **Commands** pane, select the **Write-Host** cmdlet and then configure the following options:
 
-    -   BackgroundColor: **Gray**
+    - BackgroundColor: **Gray**
 
-    -   ForegroundColor: **Black**
+    - ForegroundColor: **Black**
 
-    -   Object: **"Script execution is complete"**
+    - Object: **"Script execution is complete"**
 
 15. Select **Copy** and paste the command to line 17 of the script.
 
@@ -171,17 +169,17 @@ _Note: This will install the Telnet Client windows feature._
 
 18. At the PowerShell window, type the following command and then press **Enter**:
 
-```
-Set-Location C:\Labfiles
-```
+    ```powershell
+    Set-Location C:\Labfiles
+    ```
 
-13. At the PowerShell window, type the following and then press **Enter**:
+19. At the PowerShell window, type the following and then press **Enter**:
 
-```
-.\Services.ps1
-```
+    ```powershell
+    .\Services.ps1
+    ```
 
-14. Close all open windows and sign out of SEA-CL1.
+20. Close all open windows and sign out of SEA-CL1.
 
 **Results:** After completing the exercise you have learned how to manage Windows 10 using PowerShell and PowerShell scripts.
 
@@ -193,17 +191,17 @@ You need to ensure that all Windows 10 devices contain the Contoso utilities app
 
 ### Task 1: Customize the Start screen
 
-1.  Sign in to **SEA-CL1** as **.\\Admin** with the password **Pa55w.rd.** This signs in as the local administrator on the device.
-2.  Select **Start**, and right-click each tile and then select **Unpin from Start**.
-3.  From the Start menu, right-click each of the following apps and then select **Pin to Start:**
+1. Sign in to **SEA-CL1** as **.\\Admin** with the password **Pa55w.rd.** This signs in as the local administrator on the device.
+2. Select **Start**, and right-click each tile and then select **Unpin from Start**.
+3. From the Start menu, right-click each of the following apps and then select **Pin to Start:**
     - Snip & Sketch
     - Sticky Notes
     - Voice Recorder
     - Calculator
     - Alarms & Clock
     - Maps
-4.  In the Start screen, just above the tiles, click and select **Name group** and then replace the text with **Contoso Utilities**. 
-5.  Close the Start menu.
+4. In the Start screen, just above the tiles, click and select **Name group** and then replace the text with **Contoso Utilities**.
+5. Close the Start menu.
 
 ### Task 2: Export the Start layout
 
@@ -211,17 +209,17 @@ You need to ensure that all Windows 10 devices contain the Contoso utilities app
 
 2. At the PowerShell window, type the following command and then press **Enter**:
 
-```
-Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
-```
+    ```powershell
+    Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
+    ```
 
 3. Open **File Explorer** and then browse to **C:\\Labfiles**.
 4. Right-click **ContosoLayout.xml**, point to **Open with** and then select **Notepad**.
-5. At the first instance of **\<DefaultLayoutOverride>**, type the following:
+5. At the first instance of **\<DefaultLayoutOverride\>**, type the following:
 
-```
-<DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups"
-```
+    ```powershell
+    <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
+    ```
 
 6. Save the **ContosoLayout.xml** file and then close Notepad.
 7. Close all open windows and sign out of SEA-CL1.
@@ -253,7 +251,7 @@ Export-StartLayout -UseDesktopApplicationID -Path C:\Labfiles\ContosoLayout.xml
 
 1. Switch to SEA-CL1.
 2. Sign in to SEA-CL1 as **Contoso\\Reda** with the password of **Pa55w.rd**.
-3. Select **Start** and then take note of the Start page. The **Contoso Utilities** group displays a lock icon that specifies that the group cannot be modified. 
+3. Select **Start** and then take note of the Start page. The **Contoso Utilities** group displays a lock icon that specifies that the group cannot be modified.
 4. In the Start menu, right-click **Word** and then select **Pin to Start**. Notice that you can still customize other sections of the Start page.
 5. Sign out of SEA-CL1.
 
