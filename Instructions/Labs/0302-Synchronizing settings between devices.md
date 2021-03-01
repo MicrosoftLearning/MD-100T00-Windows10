@@ -12,7 +12,7 @@ You frequently use two devices, SEA-WS1 and SEA-WS2, and would like to ensure th
 
 ### Task 1: Connect your Microsoft account to SEA-WS1 and SEA-WS2
 
-1.  Sign in to **SEA-WS1** as **Student** with the password **Pa55w.rd**.
+1.  Sign in to **SEA-WS1** as **.\Student** with the password **Pa55w.rd**.
 2.  Select **Start** and then select **Settings**.
 3.  In the **Windows Settings** page, select **Accounts**.
 4.  On the **Accounts** page, select **Your info**. 

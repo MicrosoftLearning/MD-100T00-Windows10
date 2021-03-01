@@ -78,8 +78,8 @@ You have been asked to configure the deployment of the Office 365 apps included 
 ### Task 1: Assign a Microsoft 365 license
 
 1. Sign in to **SEA-WS1** with your Microsoft account and the PIN **1029**.
-2. In the taskbar, select the **Microsoft Edge **icon.
-3. In the address bar, enter http://portal.office.com.
+2. In the taskbar, select the **Microsoft Edge** icon.
+3. In the address bar, type **http://portal.office.com**.
 4. In the **Sign in** dialog box, enter your admin email address as provided by your instructor. It should be in the form of admin@M365xXXXXXX.onmicrosoft.com and then select **Next**.
 5. At the **Enter password** dialog box, enter the password as provided by your instructor. When prompted to save the password, select **Save**. 
 6. When prompted to **Stay signed in**, select **Yes**.
@@ -102,8 +102,8 @@ You have been asked to configure the deployment of the Office 365 apps included 
 
 ### Task 3: Install Microsoft 365 Apps for Enterprise
 
-1. On SEA-WS1, in the taskbar, select the **Microsoft Edge **icon.
-2. In the address bar, enter http://portal.office.com.
+1. On SEA-WS1, in the taskbar, select the **Microsoft Edge** icon.
+2. In the address bar, type **http://portal.office.com**.
 3. On the Pick an account prompt, select **Use another account**.
 4. In the **Sign in** dialog box, enter User2@M365xXXXXXX.onmicrosoft.com and then select **Next**.
 5. At the **Enter password** dialog box, enter **Pa55w.rd1234** and then select **Sign in**. When prompted to save the password, select **Save**. 

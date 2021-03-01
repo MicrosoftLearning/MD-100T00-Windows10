@@ -138,7 +138,7 @@ Members of the IT, Marketing, and Research departments all require access to fil
 
 7. In File Explorer, right-click **Research**, select **Properties**, select the **Security** tab, select **Advanced**, and then select the **Effective Access** tab.
 
-8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) text box, type **Brian**, select **OK**, and then select **View effective access**.
+8. In the Advanced Security Settings for Research dialog box, select **Select a user**, in the Enter the object name to select (examples) text box, type **Brian**, select **OK**, in the Multiple Names Found dialog box, review the information and select **OK**, and then select **View effective access**.
 
    _**Note**: Brian is a member of Development group. Only users with the department claim with a value of Research have permissions to the folder, you can see that Brian has no permissions allowed._
 

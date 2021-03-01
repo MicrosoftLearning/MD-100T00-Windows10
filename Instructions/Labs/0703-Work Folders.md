@@ -10,7 +10,7 @@ Members of the Marketing group often use multiple devices for their work. To hel
 
 ### Task 1: Install and Configure Work Folders
 
-1.  Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd.**
+1.  Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
     
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 
@@ -183,7 +183,7 @@ Members of the Marketing group often use multiple devices for their work. To hel
 
 10. On **SEA-WS3**, in **Work Folders**, double-click the **On SEA-CL1.txt** file.
     
-11. In Notepad, type **Online modification,** press Ctrl+S, and then close Notepad.
+11. In Notepad, type **Online modification**, press Ctrl+S, and then close Notepad.
     
 12. Switch to **SEA-CL1.**
 
@@ -200,7 +200,7 @@ Members of the Marketing group often use multiple devices for their work. To hel
 
 ### Lab cleanup
 
-1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd.**
+1. Sign in to **SEA-SVR1** as **Contoso\\Administrator** with the password **Pa55w.rd**.
 
 2. Right-click **Start**, and then select **Windows PowerShell (Admin)**.
 

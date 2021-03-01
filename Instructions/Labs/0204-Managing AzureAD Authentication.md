@@ -73,8 +73,7 @@ You have a new Windows 10 device that you would like to join to your Azure AD te
 1.  On **SEA-WS3**, select **Start**, and then select the **Settings** icon.    
 2.  In **Settings**, select **Accounts**.
 3.  Select **Access work or school** and then notice the **Connected to Contoso's Azure AD** object.
-4.  Right-click the **Start** button and then select **Computer Management**.
-5.  Select the the **Connected to Contoso's Azure AD** object and then select **Disconnect**.
+4.  Click the **Connected to Contoso's Azure AD** object and then select **Disconnect**.
 6.  Select **Yes** to confirm and then in the **Disconnect from the organization** box, select **Disconnect**.
 7.  On the **Windows Security** page, enter **Admin** with the password of **Pa55w.rd**. Select **OK**.
 8.  Select **Restart now** to restart SEA-WS3.

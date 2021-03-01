@@ -37,7 +37,7 @@ You have been delegated the task to configure the domain password policy for Con
 
 ### Task 2: Refresh GPOs
 
-1.  On LON-DC1, right-click **Start**, and then select **Windows PowerShell (Admin)**.
+1.  On SEA-SVR1, right-click **Start**, and then select **Windows PowerShell (Admin)**.
     
 2.  In the Administrator: Windows PowerShell window, type the following command, and then press **Enter**:
     

@@ -51,9 +51,9 @@ MakeWinPEMedia /ISO E:\WinPE E:\WinPE\WindowsPE_amd64.iso
 
 2.  In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **GoldImage1**.
 
-3. From the **Action** menu, select **Checkpoint**. A checkpoint is created as shown in the **Checkpoints** pane.
+3. From the **Actions** menu, select **Checkpoint**. A checkpoint is created as shown in the **Checkpoints** pane.
 
-4. From the **Action** menu, select **Connect**, and then select **Start**. After the virtual machine starts, maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window.
+4. From the **Actions** menu, select **Connect**, and in the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window, from the **Action** menu, select **Start**. Maximize the **GoldImage1 on SEA-SVR2 - Virtual Machine Connection** window.
 
 5. Sign in to **GoldImage1** as **Admin** with the password of **Pa55w.rd**. 
 
@@ -140,7 +140,7 @@ sysprep
 
 14. In Hyper-V Manager, select **SEA-SVR2** and then under **Virtual Machines** select **Computer1**.
 
-15. From the **Action** menu, select **Connect** and then in the Computer1 window, from the **Action** menu, select **Start**. Maximize the Computer1 window.
+15. From the **Actions** menu, select **Connect** and then in the **Computer1** window, from the **Action** menu, select **Start**. Maximize the Computer1 window.
 
 16. At the command prompt type the following command to configure IP settings for Windows PE:
 
@@ -219,22 +219,24 @@ sysprep
 
 30. In the Control Panel, select **View network status and tasks**.
 
-31. Select **Change adapter settings** and then configure the Ethernet adapter TCP/IPv4 settings as follows:
+31. Select **Change adapter settings** and then select **Ethernet**, select **Properties**, select **Internet Protocol Version 4 (TCP/IPv4)**, enter the following:
 
     - IP address: 10.10.0.12
     - Subnet mask: 255.255.255.0
 
-32. Right-click the **Start** button and then select **System**.
+32. Select **OK** twice, select **Close**
 
-33. In the **About** page, select **Rename this PC**.
+33. Right-click the **Start** button and then select **System**.
 
-34. In the **Rename this PC** dialog box, enter **Computer1** and then select **Next**.
+34. In the **About** page, select **Rename this PC**.
 
-35. Select **Restart later**.
+35. In the **Rename this PC** dialog box, enter **Computer1** and then select **Next**.
 
-36. Shut down Computer1. 
+36. Select **Restart later**.
 
-37. On SEA-SVR2, leave Hyper-V Manager open for the next practice lab.
+37. Shut down Computer1. 
+
+38. On SEA-SVR2, leave Hyper-V Manager open for the next practice lab.
 
 **Results**: After finishing this lab, you will have successfully prepared and captured a Windows 10 reference computer and deployed a Windows 10 image.
 

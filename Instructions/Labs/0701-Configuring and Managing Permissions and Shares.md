@@ -40,18 +40,18 @@ You need to create file shares for the Marketing and IT department to enable use
     
 4.  Right-click **Marketing**, and then select **Properties**.
 
-5.  In the Marketing Properties dialog box, select the **Sharing tab**. In the Network File and Folder Sharing section, verify that Marketing is not shared.
+5.  In the Marketing Properties dialog box, select the **Sharing tab**. In the Network File and Folder Sharing section, verify that **Marketing** is not shared.
     
 6.  In the Advanced Sharing section, Select **Advanced Sharing**.
 
-7. In the Advanced Sharing dialog box, select the **Share this folder** check box. Verify that the share name is Marketing (the same as the folder name), and that Limit the number of simultaneous users to is set to 20.
+7. In the Advanced Sharing dialog box, select the **Share this folder** check box. Verify that the share name is **Marketing** (the same as the folder name), and that Limit the number of simultaneous users to is set to 20.
 8.  Select **Permissions**.
 
 9. In the Permissions for Marketing dialog box, select the **Everyone** group and select **Remove**. 
    
 10. Select **Add**, in the Enter the object names to select (examples) box, type **Marketing**, and then select **OK**. In the Permissions for Marketing section, select the **Change** check box in the Allow column, and then select **OK** twice.
     
-11. In the Marketing Properties dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\LON-CL1\\Marketing, and then select **Close**.
+11. In the Marketing Properties dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\SEA-CL1\\Marketing, and then select **Close**.
     
 12. Select **Start**, type **cmd** and then select **Command Prompt**.
 
