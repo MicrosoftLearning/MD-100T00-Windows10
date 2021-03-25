@@ -143,13 +143,13 @@ _Note: This will install the Telnet Client windows feature._
 
    _Note: The output does not have multiple colors._
 
-9. At the end of line 14, type **–ForegroundColor \$color**
+9. At the end of line 14, type **–ForegroundColor $color**
 
 10. On the toolbar, select **Run script (F5)** in the Windows PowerShell ISE window. Select **OK** to save the file, and then read the output.
 
     _Note: Running services are green, and services that are not running are red._
 
-11. On line 16, type **Write-Host "A total of" \$services.count "services were evaluated"**
+11. On line 16, type **Write-Host "A total of" $services.count "services were evaluated"**
 
 12. Select **Run script (F5)**, and in the Windows PowerShell ISE window select **OK**.
 
