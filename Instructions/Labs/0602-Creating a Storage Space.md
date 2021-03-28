@@ -14,10 +14,13 @@ The sales department requires a new file share on SEA-WS2 that requires a mirror
 
 2.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. At the User Account Control, select **Yes**.
 
-3.  To remove all data from Disk 1, at the PowerShell Window type the following command and confirm with "Yes":
+3.  To remove all data from Disk 1, at the PowerShell Window type the following commands:
 
 ```
-Clear-Disk -Number 1 -RemoveData
+diskpart
+select disk 1
+clean all
+exit
 ```
 
 4.  To initialize Disk 1, Disk 2, and Disk 3, at the PowerShell Window type the following command:
