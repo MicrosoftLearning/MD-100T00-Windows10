@@ -92,17 +92,18 @@ You have been asked to configure the deployment of the Office 365 apps included 
 
 ### Task 2: Configure Office installation options
 
-1. In the Microsoft 365 admin center, in the Navigation menu, expand **Settings**, and then select **Org settings **.
-2. In the **Org settings** page, on the **Services** page, select **Office installation options**.
-3. On the Office installation options page, under Feature updates, select **Once a month (Monthly Enterprise Channel)**.
-4. Under Office apps that users can install, remove the check box next to **Skype for Business (Standalone)**, and then select **Save**.
-5. Close the Office installation options page.
-6. In the top-right corner, select the Account manager button and then select **Sign out**.
-7. Close Microsoft Edge.
+1. In the Microsoft 365 admin center, in the Navigation menu, select **... Show all**
+2. Expand **Settings**, and then select **Org settings**.
+3. In the **Org settings** page, on the **Services** page, select **Office installation options**.
+4. On the Office installation options page, under Feature updates, select **Once a month (Monthly Enterprise Channel)**.
+5. Under Office apps that users can install, remove the check box next to **Skype for Business (Standalone)**, and then select **Save**.
+6. Close the Office installation options page.
+7. In the top-right corner, select the Account manager button and then select **Sign out**.
+8. Close Microsoft Edge.
 
 ### Task 3: Install Microsoft 365 Apps for Enterprise
 
-1. On SEA-WS1, in the taskbar, select the **Microsoft Edge **icon.
+1. On SEA-WS1, in the taskbar, select the **Microsoft Edge**icon.
 2. In the address bar, enter http://portal.office.com.
 3. On the Pick an account prompt, select **Use another account**.
 4. In the **Sign in** dialog box, enter User2@M365xXXXXXX.onmicrosoft.com and then select **Next**.
