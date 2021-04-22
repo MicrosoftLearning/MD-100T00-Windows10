@@ -14,7 +14,7 @@ _Dependency Notice: This lab requires that a DNS CNAME entry for intranet.Contos
 2.  On the task bar, select **Microsoft Edge**.
 3.  In the Microsoft Edge window, select **Complete setup**, select **Focused**, and then select **Confirm**.
 4.  Select **Continue without signing in**.
-5.  In the Internet Explorer Address bar, type **edge://compat/enterprise**, and then press **Enter**. Notice that the Enterprise Mode Site List does not contain any entries.
+5.  In the address bar, type **edge://compat/enterprise**, and then press **Enter**. Notice that the Enterprise Mode Site List does not contain any entries.
 6.  Sign out of **SEA-CL1**.
 
 ### Task 2: Create a Site list for Internet Explorer Enterprise Mode
