@@ -11,7 +11,7 @@ As part of the Desktop Administration team at Contoso, you have been tasked with
 ### Task 1: Identify the Windows ADK tools
 
 1.  Sign in to SEA-SVR2 as **Contoso\\Administrator** with the password **Pa55w.rd**.
-2.  On the taskbar, select **Start** and then select **Control Panel**.
+2.  On the taskbar, select **Start** and then select **Control Panel** in the **Windows System** folder.
 3.  Select **Programs**, and then select **Programs and Features**. Notice that the **Windows Assessment and Deployment Kit - Windows 10** and the **Windows Assessment and Deployment Kit Windows Preinstallation Environment Add-ons - Windows 10** programs are installed.
 4.  Select **Windows Assessment and Deployment Kit - Windows 10** and then select **Change**.
 5.  On the **Maintain your Windows Assessment and Deployment Kit - Windows 10 features** page, ensure that **Change** is selected and then select **Next**.
@@ -219,14 +219,14 @@ sysprep
 
 30. In the Control Panel, select **View network status and tasks**.
 
-31. Select **Change adapter settings** and then configure the Ethernet adapter TCP/IPv4 settings as follows:
+31. Select **Change adapter settings** and then right click the Ethernet adapter, select **Properties**, click on  **Internet Protocol Version 4 (TCP/IPv4)** and click on **Properties**. In the new window select **Use the following IP address** and input the TCP/IPv4 settings as follows:
 
     - IP address: 10.10.0.12
     - Subnet mask: 255.255.255.0
 
-32. Right-click the **Start** button and then select **System**.
+32. Right-click the **Start** button and then select **Settings** (a gear icon) and click on **System**.
 
-33. In the **About** page, select **Rename this PC**.
+33. In the **About** tab, select **Rename this PC**.
 
 34. In the **Rename this PC** dialog box, enter **Computer1** and then select **Next**.
 
