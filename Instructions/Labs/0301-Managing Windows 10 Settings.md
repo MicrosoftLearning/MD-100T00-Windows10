@@ -11,7 +11,7 @@ In this lab you will learn how to configure computer settings using Windows Sett
 
 You need to use Windows Settings to validate protection settings, device specifications, and Windows specifications. You also need to determine which applications are slowing down the startup process for Windows 10. Finally, you need to create a new power plan that minimizes power usage, but does not impact multimedia presentations while the device is running on battery.
 
- ### Task 1: Using Windows Settings
+### Task 1: Using Windows Settings
 
 1.  Sign in to SEA-CL1 as **Contoso\\Administrator** with the password **Pa55w.rd**.
 2.  Select **Start,** and then select the **Settings** icon. 
