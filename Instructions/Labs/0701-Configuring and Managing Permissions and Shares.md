@@ -51,7 +51,7 @@ You need to create file shares for the Marketing and IT department to enable use
    
 10. Select **Add**, in the Enter the object names to select (examples) box, type **Marketing**, and then select **OK**. In the Permissions for Marketing section, select the **Change** check box in the Allow column, and then select **OK** twice.
     
-11. In the Marketing Properties dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\LON-CL1\\Marketing, and then select **Close**.
+11. In the Marketing Properties dialog box, in the Network File and Folder Sharing section, verify that Marketing is now shared as \\\\SEA-CL1\\Marketing, and then select **Close**.
     
 12. Select **Start**, type **cmd** and then select **Command Prompt**.
 
